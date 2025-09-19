@@ -2,52 +2,58 @@
 <html>
   <head>
     <title>Top Uno Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- link rel="stylesheet" href="style.css" /> -->
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <body>
+  <body class="bg-blue-50 text-gray-800 p-4 font-sans"> 
     <!-- All content goes here -->
-    <div id="all-contents">
-      <nav>
-        <h1> Top Uno Website </h1>
-        <ul id="nav-ul">
-          <li class="nav-li">
-            <a href="index.html>Home"</a>
-          </li>
-          <li class="nav-li">
-            <a href="portfolio.html">Portfolio</a>
-          </li>
+    <div id="all-contents" class="max-w-4xl mx-auto">
+      <nav class="bg-blue-500 p-4 rounded-lg mb-4 shadow-md">
+  <div class="flex justify-between items-center">
+    <h1 class="text-white text-2xl font-bold">Top Uno Website</h1>
+    <ul class="flex space-x-4">
+      <li>
+        <a href="index.html" class="text-white hover:text-blue-200 px-3 py-2 rounded">Home</a>
+      </li>
+      <li>
+        <a href="portfolio.html" class="text-white hover:text-blue-200 px-3 py-2 rounded">Portfolio</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+     <main class="bg-white rounded-lg shadow-lg p-6">
+  <div class="flex flex-col md:flex-row gap-6">
+    <!-- Sidebar with image -->
+    <div class="md:w-1/3">
+      <img
+        class="w-full max-w-xs rounded-lg shadow-md mx-auto"
+        src="https://www.alliantcreditunion.org/images/uploads/images/Dollar-Bill-Dimensions.jpg"
+        alt="Profile picture"
+      />
+    </div>
+
+    <!-- Content section -->
+    <div class="md:w-2/3">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Jacob Perkins</h2>
+      <p class="text-lg text-gray-600 mb-6">Student</p>
+
+      <!-- Interests section -->
+      <div class="border-2 border-gray-300 rounded-lg p-4">
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">My Interests</h3>
+        <ul class="space-y-2">
+          <li class="bg-blue-100 px-3 py-2 rounded text-blue-800">Basketball 1</li>
+          <li class="bg-pink-100 px-3 py-2 rounded text-pink-800">Gaming 2</li>
+          <li class="bg-green-100 px-3 py-2 rounded text-green-800">Sleeping 3</li>
         </ul>
-      </nav>
+      </div>
+    </div>
+  </div>
+</main>
       
     
-      <main>
-       
-        <!-- Sidebar section -->
-        <div class="sidebar">
-          <img class= "sidebar-img" src="https://www.alliantcreditunion.org/images/uploads/images/Dollar-Bill-Dimensions.jpg">
-          
-        </div>
-        
-        <!-- Content section -->
-        <div class="content">
-          <h2>Jacob Perkins</h2>
-          <p>Student at McDonogh 35 Senior High</p>
-          
-          <!-- Interest section -->
-          <div id="interest">
-            <h3>Interest</h3>
-            <ul>
-              <li>Basketball</li>
-              <li>Gaming</li>
-              <li>Sleeping</li>
-            </ul>
-          </div>
-        </div>
-          
-        
-        </div>
-      </main>
+      
       
      </div>
   </body>

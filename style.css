@@ -1,77 +1,49 @@
-body {
-    background: rgb(0, 107, 179);
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    font-family: Arial, sans-serif;
-}
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+  main {
+    height: 100ch;
+    zoom: 1.5;
+    display: grid;
+  }
 
-#all-contents {
-    max-width: 800px;
-    margin: auto;
-}
+  h1 {
+    font-size: 44px;
+  }
 
-/* navigation menu */
-nav {
-    background: rgb(17, 188, 255);
-    margin: 0 auto;
-    display: flex;
-    padding: 10px;
-    margin-bottom: 20px;
-}
+  h2 {
+    font-size: 42px;
+  }
 
-h1 {
-    display: flex;
+  h3 {
+    font-size: 36px;
+  }
+
+  #all-contents {
+    height: 100ch;
+    margin: none;
+  }
+
+  a {
+    font-size: 42px;
+  }
+
+  .sidebar {
+    margin-right: 0px;
+    justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
-    flex: 1;
-    margin: 0;
-}
+  }
 
-#nav-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+  .sidebar-img {
+    width: 100%;
+  }
 
-.nav-li {
-    display: inline-block;
-    padding: 0 10px;
-}
+  p,
+  li {
+    font-size: 24px;
+  }
 
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* main container area beneath menu */
-main {
-    background: rgb(245, 238, 219);
-    display: flex;
-    margin-top: 20px;
-}
-
-.sidebar {
-    margin-right: 25px;
-    padding: 10px;
-}
-
-.sidebar-img {
-    width: 200px;
-}
-
-.content {
-    flex: 1;
-    padding: 15px;
-}
-
-/* interests section styles */
-#interests {
-    border: 4px silver ridge;
-    padding: 8px;
-    margin-top: 20px;
-}
-
-h2, h3 {
-    margin: 0px;
+  .content {
+    align-content: center;
+    justify-content: center;
+  }
 }
